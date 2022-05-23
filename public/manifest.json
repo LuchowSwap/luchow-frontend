@@ -1,0 +1,22 @@
+{
+  "short_name": "LuchowSwap",
+  "name": "LuchowSwap",
+  "description": "Farm MLOKY with LUCHOW-LP Tokens",
+  "homepage_url": "https://app.luchowswap.com",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
