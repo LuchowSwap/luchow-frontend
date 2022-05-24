@@ -17,8 +17,8 @@ const StyledModal = styled(Modal)`
 `
 
 const ScrollableContainer = styled.div`
-  // height: 310px;
-  // overflow-y: scroll;
+  height: 310px;
+  overflow-y: scroll;
   border-bottom: ${({ theme }) => `1px solid ${theme.colors.cardBorder}`};
   padding: 24px;
 `
