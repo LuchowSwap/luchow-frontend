@@ -99,7 +99,7 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="primary" mb="0px">
-            {t('LunaChow')}
+            {t('LuchowSwap')}
           </Heading>
           <Heading scale="xxl" color="text" mb="48px">
             {t('Decentralized Swap')}
