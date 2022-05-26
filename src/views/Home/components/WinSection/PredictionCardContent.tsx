@@ -52,8 +52,9 @@ const PredictionCardContent = () => {
         </Text>
         {bnbWonInUsd ? (
           <Heading color="primary" my="8px" scale="xl" bold>
-            {pretext}
-            {localisedBnbUsdString}
+            Coming...
+            {/* {pretext} */}
+            {/* {localisedBnbUsdString} */}
           </Heading>
         ) : (
           <>
