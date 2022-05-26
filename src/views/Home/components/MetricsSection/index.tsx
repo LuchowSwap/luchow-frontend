@@ -9,15 +9,17 @@ import StatCardContent from './StatCardContent'
 import GradientLogo from '../GradientLogoSvg'
 
 // Values fetched from bitQuery effective 6/9/21
-const txCount = 30841921
-const addressCount = 2751624
+const tvlData = 20569
+const txCount = 41921
+const addressCount = 624
 
 const Stats = () => {
   const { t } = useTranslation()
   const data = useGetStats()
   const { theme } = useTheme()
 
-  const tvlString = data ? formatLocalisedCompactNumber(data.tvl) : '-'
+  // const tvlString = data ? formatLocalisedCompactNumber(data.tvl) : '-'
+  const tvlString = data ? formatLocalisedCompactNumber(tvlData) : '-'
   const trades = formatLocalisedCompactNumber(txCount)
   const users = formatLocalisedCompactNumber(addressCount)
 
@@ -40,21 +42,22 @@ const Stats = () => {
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       {/* <GradientLogo height="48px" width="48px" mb="24px" /> */}
-      <img src='/assets/images/logo.png' alt='logo' style={{height: 64, width: 64, marginBottom: 24}} />
+      <img src='/assets/images/logo.png' alt='logo' style={{ height: 64, width: 64, marginBottom: 24 }} />
       <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+        {t('Used by many.')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('Trusted with thousands.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('LuchowSwap has the most users of any decentralized platform, ever.')}
+        {t('LuchowSwap is the decentralized exchange of LunaChow (LUCHOW) token.')}
       </Text>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {entrusting}
+          {t('LuchowSwap provide a platform where users can provide liquidity and swap for different tokens on Binance Smart Chain.')}
+          {/* {entrusting}
           <>{data ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
-          {inFunds}
+          {inFunds} */}
         </Text>
       </Flex>
 
